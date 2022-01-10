@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio2</title>
+</head>
+<body>
+    Qual seu País de origem? <input type="textp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Resultado</div>
+    <script>
+        function verificar(){
+            var pais = document.getElementById('txtp')
+            var res = document.querySelector('div#res')
+            var pais1= String(pais.value)
+            if(pais1 == 'Brasil'){
+                res.innerHTML = 'Você é brasileiro'
+            }else{
+                res.innerHTML = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
