@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(248, 190, 63, 0.849);
+    background-color: rgba(247, 120, 17, 0.425);
     font: normal 15py Arial;
 }
 
@@ -8,15 +8,19 @@ header{
 }
 
 section{
-    background: rgba(9, 253, 62, 0.63);
+    background: rgba(238, 16, 16, 0.63);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(238, 255, 0, 0.541);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.541);
 
 }footer{
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-style: italic;
+}
+input{
+    font: normal 13pt arial;
+    width:80px;
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="est.css">
+</head>
+<body>
+    <header>
+        Cálculo de Média
+    </header>
+    <section>
+            <input type="number" name="n1" id="txtn1">+
+            <input type="number" name="n2" id="txtn2">+
+            <input type="number" name="n3" id="txtn3">+
+            <input type="number" name="n4" id="txtn4">
+            <input type="button" value="Calcular" onclick=somar()>
+            <div> A média para ser aprovado é 7.0 </div>
+            <div id="res"> Resultado: </div>
+        </section>
+    <footer>&copy; VL </footer>
+    <script>
+        function somar(){  
+            var tn1=document.getElementById('txtn1')
+            var tn2=document.querySelector('#txtn2')
+            var tn3=document.getElementById('txtn3')
+            var tn4 = document.getElementById("txtn4")
+            var res=document.getElementById('res')
+            var n1= Number(tn1.value)
+            var n2= Number(tn2.value)
+            var n3= Number (tn3.value)
+            var n4= Number(tn4.value)
+            var s = (n1 + n2 + n3 + n4)/4
+            res.innerHTML = 'Sua média é: ' + s.toFixed(2)
+             if (s < 7.0){
+                res.innerHTML= 'Você está REPROVADO! PARABENS :D'
+            }else{
+                res.innerHTML = 'Você está APROVADO! NOTA:' + s;
+            }
+}
+    </script>
+</body>
+</html>
